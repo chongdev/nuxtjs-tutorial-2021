@@ -1,5 +1,8 @@
 <template>
   <div>
+
+    <nav-bar></nav-bar>
+    
     <div class="chat-banner chat-banner--danger" v-if="isNetwork">
 
       <div class="chat-banner--left">
@@ -29,15 +32,16 @@
         </div>
       </div>
     </div>
-    <h1>This User</h1>
+    <h1>This Movies</h1>
   </div>
 </template>
 
 
 <script>
+import NavBar from '~/components/NavBar.vue'
 
 export default {
-
+  components: [NavBar],
   data(){
 
     return {
