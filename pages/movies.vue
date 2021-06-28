@@ -1,7 +1,5 @@
 <template>
   <div>
-
-    <nav-bar></nav-bar>
     
     <div class="chat-banner chat-banner--danger" v-if="isNetwork">
 
@@ -38,12 +36,8 @@
 
 
 <script>
-import NavBar from '~/components/NavBar.vue'
-
 export default {
-  components: [NavBar],
   data(){
-
     return {
       isNetwork: true
     }
